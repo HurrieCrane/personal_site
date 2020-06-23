@@ -21,4 +21,4 @@ jobs:
         aws-region: eu-west-1
 
     - name: Deploy to S3
-      run: aws s3 sync ./ ${{ secrets.personal_site_bucket }} --delete --exclude ./github
+      run: aws s3 sync ./ ${{ secrets.PERSONAL_SITE_BUCKET }} --delete --exclude ./github
