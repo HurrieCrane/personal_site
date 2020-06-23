@@ -2,7 +2,7 @@ on:
   release:
     types: [created]
 
-name: Deploy to Amazon EC2
+name: Deploy to Amazon S3
 
 jobs:
   deploy:
