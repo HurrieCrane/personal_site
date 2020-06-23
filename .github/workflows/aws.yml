@@ -20,5 +20,7 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: eu-west-1
 
-    - name: Deploy to S3
+    - name: Deploy to Main site
       run: aws s3 sync ./ ${{ secrets.PERSONAL_SITE_BUCKET }} --delete --exclude ./github
+    - name: Deploy to Second site
+      run: aws s3 sync ./ ${{ secrets.SECOND_SITE_BUCKET }} --delete --exclude ./github
