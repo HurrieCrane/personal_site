@@ -14,11 +14,16 @@
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="style.css"/>
 
-		<!-- VISA Tracking Code for joecrane.co.uk --><script>(function(v,i,s,a){if(!v._visaSettings){v._visaSettings={};}v._visaSettings["3362238e-2113-11eb-b589-901b0edac50a"]={v:"0.3",s:"3362238e-2113-11eb-b589-901b0edac50a",a:"1"};_v=i.getElementsByTagName("head")[0];_a=_v;_i=i.createElement("script");_s=_i;_s.defer="defer";_s.src=s+a+v._visaSettings["3362238e-2113-11eb-b589-901b0edac50a"].v;_a.appendChild(_s);})(window,document,"//app-worker.visitor-analytics.io/main",".js?s=3362238e-2113-11eb-b589-901b0edac50a&v=")</script><!-- VISA Tracking Code for joecrane.co.uk -->
-		
+		<!-- VISA Tracking Code for joecrane.co.uk -->
+		<script>(function(v,i,s,a){if(!v._visaSettings){v._visaSettings={};}v._visaSettings["3362238e-2113-11eb-b589-901b0edac50a"]={v:"0.3",s:"3362238e-2113-11eb-b589-901b0edac50a",a:"1"};_v=i.getElementsByTagName("head")[0];_a=_v;_i=i.createElement("script");_s=_i;_s.defer="defer";_s.src=s+a+v._visaSettings["3362238e-2113-11eb-b589-901b0edac50a"].v;_a.appendChild(_s);})(window,document,"//app-worker.visitor-analytics.io/main",".js?s=3362238e-2113-11eb-b589-901b0edac50a&v=")</script>
+		<!-- VISA Tracking Code for joecrane.co.uk -->
+
+		<!-- Vue.js -->
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+
 	</head>
 	<body>
-		<div class="left-shifted">
+		<div class="left-shifted" id="persona_site">
 			<div id="head">
 				<!-- <h1>Joseph Crane</h1>  -->
 				<!-- <img src="https://pbs.twimg.com/profile_images/1114468191051440128/20OYMmoP_400x400.jpg"> -->
@@ -27,7 +32,7 @@
 				<br>
 				My name is Joseph Crane, I'm an <b>AWS Cloud Native</b> developer currently based in <b>Liverpool</b>.<br><br>
 				
-				Currently I'm working at <a href="https://theverygroup.com/">The Very Group</a>, a pure-play retailer based in Liverpool, where I've worked for the past 
+				Currently I'm working at <a href="https://theverygroup.com/">The Very Group</a>, a pure-play retailer based in Liverpool, where I've worked for the past
 				three years. I've worked on a number of different projects whilst at The Very group including and gotten to use a
 				range of different AWS services and technologies.<br><br>
 
@@ -52,8 +57,9 @@
 				<br><br>
 
 				Send me an email at: <br>
-					<a href="mailto://HurrieCrane*pm.me" id="liame">HurrieCrane*pm.me</a>
+					<u id="liame" v-on:click="open_liame" v-bind:title="liame">hurriecrane*pm.me</u>
 			</p>
 		</div>
+		<script src="./index.js"></script>
 	</body>
 </html>
